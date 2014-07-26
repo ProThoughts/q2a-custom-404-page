@@ -1,7 +1,7 @@
 <?php
 
-class pt_qa_custom_404_page {
-
+class pt_qa_custom_404_page 
+{
 	function allow_template($template)
 	{
 		return ($template!='admin');
@@ -11,8 +11,8 @@ class pt_qa_custom_404_page {
 	{
 
 		$ok = null;
-		if (qa_clicked('np_q_save_button')) {
-			
+		if (qa_clicked('np_q_save_button')) 
+		{
 			qa_opt('pt_enable_html_404_message', (bool)qa_post_text('pt_enable_html_404_message'));
 			qa_opt('pt_q2a_html_404_message_codebox', qa_post_text('pt_q2a_html_404_message_field'));            
 
