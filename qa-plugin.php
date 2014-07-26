@@ -9,7 +9,7 @@
 	Plugin Author: ProThoughts
 	Plugin Author URI: http://www.ProThoughts.com/
 	Plugin License: GPLv2
-	Plugin Minimum Question2Answer Version: 1.5.4
+	Plugin Minimum Question2Answer Version: 1.3.2
 	Plugin Update Check URI: https://raw.githubusercontent.com/ProThoughts/q2a-custom-404-page/master/qa-plugin.php
 */
 
