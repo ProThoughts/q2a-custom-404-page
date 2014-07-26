@@ -1,66 +1,45 @@
 <?php
 
-class qa_custom_404_page {
+class pt_qa_custom_404_page {
 
 	function allow_template($template)
 	{
 		return ($template!='admin');
 	}
 
-	function option_default($option) {
-
-		switch($option) {
-  
-            case 'q2a_enable_404_page':
-                return true;
-
-			default:
-				return null;
-		}	
-
-	}
-	
 	function admin_form(&$qa_content)
 	{
 
 		$ok = null;
 		if (qa_clicked('np_q_save_button')) {
 			
-			qa_opt('q2a_enable_404_page',(bool)qa_post_text('q2a_enable_404_page'));            
-			qa_opt('enable_html_404_message',(bool)qa_post_text('enable_html_404_message'));
-			qa_opt('q2a_html_404_message_codebox', qa_post_text('q2a_html_404_message_field'));            
+			qa_opt('pt_enable_html_404_message', (bool)qa_post_text('pt_enable_html_404_message'));
+			qa_opt('pt_q2a_html_404_message_codebox', qa_post_text('pt_q2a_html_404_message_field'));            
 
 			$ok = qa_lang('admin/options_saved');
 		}
       
-			qa_set_display_rules($qa_content, array(
+		qa_set_display_rules($qa_content, array(
 				
-				'q2a_html_404_message_display' => 'enable_html_404_message',
+			'pt_q2a_html_404_message_display' => 'pt_enable_html_404_message',
 				
-			));
+		));
 
 		$fields = array();
 
 		$fields[] = array(
-			'label' => 'Enable 404 Page',
-			'tags' => 'NAME="q2a_enable_404_page"',
-			'value' => qa_opt('q2a_enable_404_page'),
+			'label' => 'Enable Custom 404 Page',
 			'type' => 'checkbox',
-		);
-        
-		$fields[] = array(
-			'label' => 'Custom 404 Message',
-			'type' => 'checkbox',
-			'value' => qa_opt('enable_html_404_message'),
-			'tags' => 'NAME="enable_html_404_message" ID="enable_html_404_message"',
+			'value' => qa_opt('pt_enable_html_404_message'),
+			'tags' => 'NAME="pt_enable_html_404_message" ID="pt_enable_html_404_message"',
 		);
 		
 		$fields[] = array(
-			'id' => 'q2a_html_404_message_display',
+			'id' => 'pt_q2a_html_404_message_display',
 			'label' => 'Write your 404 message in this box',
 			'type' => 'textarea',
-			'value' => qa_opt('q2a_html_404_message_codebox'),
-			'tags' => 'NAME="q2a_html_404_message_field"',
+			'value' => qa_opt('pt_q2a_html_404_message_codebox'),
+			'tags' => 'NAME="pt_q2a_html_404_message_field"',
             'rows' => 3,
 		);
         
