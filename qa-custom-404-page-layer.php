@@ -6,7 +6,7 @@ class qa_html_theme_layer extends qa_html_theme_base {
         {
             if ($this->template=='not-found') {
                 // output the content of your 404 page...
-				if ((qa_opt('q2a_enable_404_page')) && (qa_opt('q2a_html_404_message'))){
+				if ((qa_opt('q2a_enable_404_page')) && (qa_opt('enable_html_404_message'))){
 								$this->output('<div class="qa-main">');
 								$this->output(qa_opt('q2a_html_404_message_codebox'));
 								$this->output('</div>');

@@ -27,7 +27,7 @@ class qa_custom_404_page {
 		if (qa_clicked('np_q_save_button')) {
 			
 			qa_opt('q2a_enable_404_page',(bool)qa_post_text('q2a_enable_404_page'));            
-			qa_opt('q2a_html_404_message',(bool)qa_post_text('q2a_html_404_message'));
+			qa_opt('enable_html_404_message',(bool)qa_post_text('enable_html_404_message'));
 			qa_opt('q2a_html_404_message_codebox', qa_post_text('q2a_html_404_message_field'));            
 
 			$ok = qa_lang('admin/options_saved');
@@ -35,7 +35,7 @@ class qa_custom_404_page {
       
 			qa_set_display_rules($qa_content, array(
 				
-				'q2a_html_404_message_display' => 'q2a_html_404_message',
+				'q2a_html_404_message_display' => 'enable_html_404_message',
 				
 			));
 
@@ -51,8 +51,8 @@ class qa_custom_404_page {
 		$fields[] = array(
 			'label' => 'Custom 404 Message',
 			'type' => 'checkbox',
-			'value' => qa_opt('q2a_html_404_message'),
-			'tags' => 'NAME="q2a_html_404_message" ID="q2a_html_404_message"',
+			'value' => qa_opt('enable_html_404_message'),
+			'tags' => 'NAME="enable_html_404_message" ID="enable_html_404_message"',
 		);
 		
 		$fields[] = array(
