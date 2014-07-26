@@ -32,14 +32,7 @@ class qa_custom_404_page {
 
 			$ok = qa_lang('admin/options_saved');
 		}
-		else if (qa_clicked('np_q_reset_button')) {
-			foreach($_POST as $i => $v) {
-				$def = $this->option_default($i);
-				if($def !== null) qa_opt($i,$def);
-			}
-			$ok = qa_lang('admin/options_reset');
-		}
-        
+      
 			qa_set_display_rules($qa_content, array(
 				
 				'q2a_html_404_message_display' => 'q2a_html_404_message',
@@ -86,10 +79,6 @@ class qa_custom_404_page {
 				array(
 				'label' => qa_lang_html('main/save_button'),
 				'tags' => 'NAME="np_q_save_button"',
-				),
-				array(
-				'label' => qa_lang_html('admin/reset_options_button'),
-				'tags' => 'NAME="np_q_reset_button"',
 				),
 			),
 		);
