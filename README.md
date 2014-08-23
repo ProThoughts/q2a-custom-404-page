@@ -32,3 +32,16 @@ Admin Guide
 Demo
 ----
 - Plugin is active on http://q2a-dev.prothoughts.com
+
+Change Log
+----------
+**v1.0**
+* First version.
+
+About Question2Answer(Q2A)
+---------------------
+Question2Answer is a free and open source platform writtern in PHP/MySQL for Q&A sites. For more information, visit [http://www.question2answer.org/](http://www.question2answer.org/)
+
+License
+-------
+[GPL v2] (http://www.gnu.org/licenses/gpl-2.0.html)
