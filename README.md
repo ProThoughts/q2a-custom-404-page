@@ -20,7 +20,7 @@ Installation Guide
 
 Minimum Question2Answer Version Required
 ----------------------------------------
-- v1.3.2
+- v1.3.2 (works with v1.7.1)
 
 Admin Guide
 -----------
