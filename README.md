@@ -3,7 +3,7 @@ Customize Q2A 404 page message
 
 Plugin Version
 --------------
-- v1.0
+- v1.1
 
 This plugin will allow you to customize 404 page. You can place useful message for the site users. 
 
@@ -20,7 +20,7 @@ Installation Guide
 
 Minimum Question2Answer Version Required
 ----------------------------------------
-- v1.3.2 (works with v1.7.4)
+- v1.6 (works with v1.7.4)
 
 Admin Guide
 -----------
@@ -35,6 +35,10 @@ Demo
 
 Change Log
 ----------
+**v1.1**
+* Added metadata.json.
+* Code formatted.
+
 **v1.0**
 * First version.
 
