@@ -11,7 +11,7 @@ class pt_qa_custom_404_page
 	{
 
 		$ok = null;
-		if (qa_clicked('np_q_save_button')) 
+		if (qa_clicked('pt_q2a_custom_404_page_save_button')) 
 		{
 			qa_opt('pt_enable_html_404_message', (bool)qa_post_text('pt_enable_html_404_message'));
 			qa_opt('pt_q2a_html_404_message_codebox', qa_post_text('pt_q2a_html_404_message_field'));            
@@ -57,7 +57,7 @@ class pt_qa_custom_404_page
 			'buttons' => array(
 				array(
 				'label' => qa_lang_html('main/save_button'),
-				'tags' => 'NAME="np_q_save_button"',
+				'tags' => 'NAME="pt_q2a_custom_404_page_save_button"',
 				),
 			),
 		);
