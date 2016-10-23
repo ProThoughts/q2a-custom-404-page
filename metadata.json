@@ -1,0 +1,12 @@
+{
+	"name": "Custom 404 Page",
+	"uri": "https://github.com/ProThoughts/q2a-custom-404-page",
+	"description": "Customize 404 page message",
+	"version": "1.0",
+	"date": "2014-07-25",
+	"author": "ProThoughts",
+	"author_uri": "http://prothoughts.com",
+	"license": "GPLv2",
+	"update_uri": "https://raw.githubusercontent.com/ProThoughts/q2a-custom-404-page/master/metadata.json",
+	"min_q2a": "1.6"
+}
