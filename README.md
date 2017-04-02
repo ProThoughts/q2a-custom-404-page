@@ -31,7 +31,7 @@ Admin Guide
 
 Demo
 ----
-- Plugin is active on http://q2a-dev.prothoughts.com
+- Plugin is active on http://demo.question2answer.info
 
 Change Log
 ----------
