@@ -10,6 +10,11 @@ class qa_html_theme_layer extends qa_html_theme_base
 				$this->output('<div class="qa-main">');
 				$this->output(qa_opt('pt_q2a_html_404_message_codebox'));
 				$this->output('</div>');
+				if (qa_opt('pt_redirect_404_page_to_homepage'))
+				{
+					qa_redirect(''); // Go to home page
+				} 
+
             } 
 			else
 			{

@@ -3,14 +3,15 @@ Customize Q2A 404 page message
 
 Plugin Version
 --------------
-- v1.1
+- v1.2
 
 This plugin will allow you to customize 404 page. You can place useful message for the site users. 
 
 Features
 --------
-- Supports HTML code.
+- Supports HTML code, you can also add Google Analytics code.
 - Enable or disable plugin.
+- Redirect 404 page to homepage
 
 Installation Guide
 ------------------

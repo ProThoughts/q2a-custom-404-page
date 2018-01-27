@@ -14,7 +14,8 @@ class pt_qa_custom_404_page
 		if (qa_clicked('pt_q2a_custom_404_page_save_button')) 
 		{
 			qa_opt('pt_enable_html_404_message', (bool)qa_post_text('pt_enable_html_404_message'));
-			qa_opt('pt_q2a_html_404_message_codebox', qa_post_text('pt_q2a_html_404_message_field'));            
+			qa_opt('pt_q2a_html_404_message_codebox', qa_post_text('pt_q2a_html_404_message_field'));
+			qa_opt('pt_redirect_404_page_to_homepage', (bool)qa_post_text('pt_redirect_404_page_to_homepage'));            
 
 			$ok = qa_lang('admin/options_saved');
 		}
@@ -33,10 +34,17 @@ class pt_qa_custom_404_page
 			'value' => qa_opt('pt_enable_html_404_message'),
 			'tags' => 'NAME="pt_enable_html_404_message" ID="pt_enable_html_404_message"',
 		);
+
+		$fields[] = array(
+			'label' => 'Redirect 404 Page to Homepage',
+			'type' => 'checkbox',
+			'value' => qa_opt('pt_redirect_404_page_to_homepage'),
+			'tags' => 'NAME="pt_redirect_404_page_to_homepage" ID="pt_redirect_404_page_to_homepage"',
+		);
 		
 		$fields[] = array(
 			'id' => 'pt_q2a_html_404_message_display',
-			'label' => 'Write your 404 message in this box',
+			'label' => 'Write custom 404 message in this box(HTML allowed) or Google Analytics code',
 			'type' => 'textarea',
 			'value' => qa_opt('pt_q2a_html_404_message_codebox'),
 			'tags' => 'NAME="pt_q2a_html_404_message_field"',

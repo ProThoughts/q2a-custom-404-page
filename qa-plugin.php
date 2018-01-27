@@ -4,8 +4,8 @@
 	Plugin Name: Custom 404 Page
 	Plugin URI: https://github.com/ProThoughts/q2a-custom-404-page
 	Plugin Description: Customize 404 page message
-	Plugin Version: 1.1
-	Plugin Date: 2016-10-23
+	Plugin Version: 1.2
+	Plugin Date: 2018-01-26
 	Plugin Author: ProThoughts
 	Plugin Author URI: http://www.ProThoughts.com/
 	Plugin License: GPLv2
