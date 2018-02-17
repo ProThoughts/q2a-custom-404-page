@@ -29,7 +29,7 @@ class pt_qa_custom_404_page
 		$fields = array();
 
 		$fields[] = array(
-			'label' => 'Enable Custom 404 Page',
+			'label' => 'Enable Custom 404 Plugin',
 			'type' => 'checkbox',
 			'value' => qa_opt('pt_enable_html_404_message'),
 			'tags' => 'NAME="pt_enable_html_404_message" ID="pt_enable_html_404_message"',
