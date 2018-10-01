@@ -36,6 +36,9 @@ Demo
 
 Change Log
 ----------
+**v1.2**
+* Redirect 404 page to homepage
+
 **v1.1**
 * Added metadata.json.
 * Code formatted.
