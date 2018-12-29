@@ -1,5 +1,6 @@
 Customize Q2A 404 page message
 ==============================
+[![Works with](https://img.shields.io/badge/Works%20with-Q2A_v1.8.2-green.svg?style=flat)](https://github.com/q2a/question2answer/releases)
 
 Plugin Version
 --------------
@@ -21,7 +22,7 @@ Installation Guide
 
 Minimum Question2Answer Version Required
 ----------------------------------------
-- v1.6 (works with v1.7.4, v1.8)
+- v1.6 (works with v1.7.4, v1.8.2)
 
 Admin Guide
 -----------
